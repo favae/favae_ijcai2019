@@ -6,7 +6,7 @@ We used a bi-dimensional space sequential reaching dataset. Starting from point 
 
 ## Label Table
 
-|         | Degree of factors | Ground truth factor     |
+|         | Degree of factors | Ground-truth factor     |
 | ------- | ----------------- | ----------------------- |
 | factor1 | 2                 | Goal position           |
 | factor2 | 2                 | Curved inward / outward |

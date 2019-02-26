@@ -9,9 +9,9 @@ These dataset contain multiple dynamic factors.
 ## Contents
 
 - [Dataset](#dataset)
-- [Note of Information Bottleneck Principle forSequential Data](./note/Information Bottleneck_Principle_for_Sequential_Data.pdf)
+- [Note of Information Bottleneck Principle for Sequential Data](./note/Information_Bottleneck_Principle_for_Sequential_Data.pdf)
 - [addtional experiments (Gripper)](./note/gripper_result.md)
-- [Experiments parameter's detail](./note/model_details.md)
+- [Experiment Details](./note/model_details.md)
 
 ##  <a name="dataset">Dataset</a>
 

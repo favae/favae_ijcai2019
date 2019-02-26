@@ -8,7 +8,7 @@ This sequential datasets generated from more complex dynamic factors. Five diffe
 
 ## Label Table
 
-|         | Degree of factors | Ground truth factors               |
+|         | Degree of factors | Ground-truth factors               |
 | ------- | ----------------- | ---------------------------------- |
 | factor1 | 5                 | Goal position                      |
 | factor2 | 4                 | 1st trajectory shape               |

@@ -1,10 +1,8 @@
-## Architecture details
-
-
+# Experiment Details
 
 ## FAVAE (proposal model)
 
-We describe the hyper parameters used for the results in 2D Reaching dataset, 2D Wavy Reaching dataset and Sprites dataset. We search the parameters beta and best C is shown in dictionary bellow.  In Sprites dataset, we add the pre-encoder and post-decoder for encoding and decoding of images at each time step. The pre-encoding and post-decoding architecture is same as "encode_frames" and "decode_frames" in the code implementing Disentangled-Sequential-Autoencoder [This code is available](https://github.com/yatindandi/Disentangled-Sequential-Autoencoder) with conv_dim=48. We search the parameters from beta = 0 to beta = 100 and the best parameter is beta = 20 with C = [20, 10, 5].
+We describe the hyper parameters used for the results in 2D Reaching dataset, 2D Wavy Reaching dataset and Sprites dataset. We search the parameters beta and best C is shown in dictionary bellow.  In Sprites dataset, we add the pre-encoder and post-decoder for encoding and decoding of images at each time step. The pre-encoding and post-decoding architectures are the same as "encode_frames" and "decode_frames" in the code implementing the Disentangled-Sequential-Autoencoder [This code is available](https://github.com/yatindandi/Disentangled-Sequential-Autoencoder) with conv_dim=48. We search the parameters from beta = 0 to beta = 100 and the best parameter is beta = 20 with C = [20, 10, 5].
 
 ```python
 import numpy as np
@@ -31,4 +29,4 @@ c_dict = {
 ## FHVAE (baseline model)
 
 For the FHVAE experiments, we used the code from the implementation at [here](https://github.com/wnhsu/FactorizedHierarchicalVAE).
-We used the recurrent setting with LSTM encoders and decoder with unit size=256 and batch size=80. Dimensions of latent variable z1 and z2 are 7 for each. We used Adam optimizer with learning rate=0.001. We applied goal position factors (2 classes for 2D Reaching and 5 classes for 2D wavy Reaching) as label inputs. We varied alpha from 1.0 to 30.0, and the best alpha was alpha=1.0 for both 2D Reaching and 2D wavy reaching.
+We used the recurrent setting with LSTM encoders and a decoder with unit size=256 and batch size=80. The dimensions of latent variables z1 and z2 wrer 7 for each. We used Adam optimizer with learning rate=0.001. We applied goal-position factors (2 classes for 2D Reaching and 5 classes for 2D Wavy Reaching) as label inputs. We varied alpha from 1.0 to 30.0, and the best alpha was alpha=1.0 for both 2D Reaching and 2D Wavy Reaching.

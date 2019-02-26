@@ -12,3 +12,5 @@ FAVAE learned the disentangled factors of the Gripper dataset. Examples visualiz
 ![](../gripper/1_8_-0.8.gif)
 **(d)  Drop the ball or placing it into the basket gently**
 ![](../gripper/1_3_-1.20.gif)
+
+Visualization of learned disentangled representations for Gripper dataset. Traversed latent variable shows changing position of blue ball and blue basket: (b) (9th z in 1st ladder), changing target ball from red one to blue one and moving accordingly:(c) (1st z in 2nd ladder), changing plan from dropping ball to placing it gently: (d) (4th z in 2nd ladder).
